@@ -1,5 +1,6 @@
-def valid_word?(word)
-  dictionary = ["diamond", "blue", "bluest", "crystal", "quantity", "gorilla", "crystalize"]
-return (dictionary.grep(word).any?)
+def valid_word?
+  @dictionary = ["diamond", "blue", "bluest", "crystal", "quantity", "gorilla", "crystalize"]
+  @dictionary.grep(@word_to_test).any?
 
 end
+
